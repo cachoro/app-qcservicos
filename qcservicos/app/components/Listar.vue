@@ -1,25 +1,18 @@
 <template>
   <Page>
     <ActionBar>
-      <Image src="~/assets/images/logo_qc.png" @tap="$navigateTo(homePage)" class="logo" stretch="aspectFit" />
-    </ActionBar>
-    <StackLayout>
       <Label :text="profissao" class="titulo" />
-        
-        <Label v-if="resultado.length == 0" class="text-left warn-item" horizontalAlignment="left" text="Nenhum profissional cadastrado na categoria selecionada." row="1" col="0" textWrap="true"></Label>
-        
-        <ListView for="item in resultado">
-          <v-template>
-            <CardView class="cardStyle" margin="10" elevation="10" radius="2" >
-              <GridLayout rows="0,25,35,*" columns="auto">
-                <Label class="text-left item item-nome" horizontalAlignment="left" :text="item.nome" row="1" col="0" textWrap="true"></Label>
-                <Label class="text-left item" horizontalAlignment="left" :text="item.fone" row="2" col="0"></Label>
-                <Label class="text-left item" horizontalAlignment="left" :text="item.local" row="3" col="0"></Label>
-              </GridLayout>
-            </CardView>
-          </v-template>
-        </ListView>
-    </StackLayout>
+    </ActionBar>
+
+    <ListView for="item in resultado">
+      <v-template>
+        <StackLayout>
+          <Label class="text-left item item-nome" horizontalAlignment="left" :text="item.nome" height="40" textWrap="true"></Label>
+          <Label class="text-left item" horizontalAlignment="left" height="40" :text="item.fone" ></Label>
+          <Label class="text-left item" horizontalAlignment="left" height="40" :text="item.local" ></Label>
+        </StackLayout>
+      </v-template>
+    </ListView>
   </Page>
 </template>
 <script>

@@ -6,12 +6,12 @@
         
         <WrapLayout orientation="horizontal" width="100%" height="100%"
                 backgroundColor="lightgray" class="container">
-            <Image src="~/assets/images/carpinteiro.jpg" @tap="$navigateTo(listarPage, {props:{profissao:'Carpinteiro'}})" stretch="none" class="thumb home-image-size" width="48%" height="25%" />
-            <Image src="~/assets/images/costureira.jpg" @tap="$navigateTo(listarPage, {props:{profissao:'Costureira'}})" stretch="none" class="thumb home-image-size" width="48%" height="25%" />
-            <Image src="~/assets/images/eletricista.jpg" @tap="$navigateTo(listarPage, {props:{profissao:'Eletricista'}})" stretch="none" class="thumb home-image-size" width="48%" height="25%" />
-            <Image src="~/assets/images/mecanico.jpg" @tap="$navigateTo(listarPage, {props:{profissao:'Mecânico'}})" stretch="none" class="thumb home-image-size" width="48%" height="25%" />
-            <Image src="~/assets/images/pedreiro.jpeg" @tap="$navigateTo(listarPage, {props:{profissao:'Pedreiro'}})" stretch="none" class="thumb home-image-size" width="48%" height="25%" />
-            <Image src="~/assets/images/pintor.jpg" @tap="$navigateTo(listarPage, {props:{profissao:'Pintor'}})" stretch="none" class="thumb home-image-size" width="48%" height="25%" />
+            <Image src="~/assets/images/Carpintaria.png" @tap="$navigateTo(listarPage, {props:{profissao:'Carpinteiro'}})" stretch="aspectFill" class="thumb home-image-size" width="48%" height="25%" />
+            <Image src="~/assets/images/Costura.png" @tap="$navigateTo(listarPage, {props:{profissao:'Costureira'}})" stretch="aspectFill" class="thumb home-image-size" width="48%" height="25%" />
+            <Image src="~/assets/images/Eletrica.png" @tap="$navigateTo(listarPage, {props:{profissao:'Eletricista'}})" stretch="aspectFill" class="thumb home-image-size" width="48%" height="25%" />
+            <Image src="~/assets/images/Mecanica.png" @tap="$navigateTo(listarPage, {props:{profissao:'Mecânico'}})" stretch="aspectFill" class="thumb home-image-size" width="48%" height="25%" />
+            <Image src="~/assets/images/Construcao.png" @tap="$navigateTo(listarPage, {props:{profissao:'Pedreiro'}})" stretch="aspectFill" class="thumb home-image-size" width="48%" height="25%" />
+            <Image src="~/assets/images/Pintura.png" @tap="$navigateTo(listarPage, {props:{profissao:'Pintor'}})" stretch="aspectFill" class="thumb home-image-size" width="48%" height="25%" />
         </WrapLayout>
     </Page>
 </template>
